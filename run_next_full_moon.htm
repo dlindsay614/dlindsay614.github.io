@@ -1,0 +1,349 @@
+<html>
+
+<head>
+<style>
+.spanstyle {
+	position:absolute;
+	visibility:visible;
+	top:-50px;
+	font-size:10pt;
+	font-family:Verdana;
+      font-weight:bold;
+	color:white;
+}
+</style>
+<script>
+
+/*
+Cursor Trailor Text- By Peter Gehrig (http://www.24fun.ch/)
+Permission given to Dynamicdrive.com to feature script in it's archive.
+For full source code, installation instructions, and 1000's more DHTML scripts,
+visit http://dynamicdrive.com
+*/
+
+var x,y
+var step=20
+var flag=0
+
+// Your snappy message. Important: the space at the end of the sentence!!!
+var message="Hi Ho, Hi Ho, A Running We Will Go... "
+message=message.split("")
+
+var xpos=new Array()
+for (i=0;i<=message.length-1;i++) {
+	xpos[i]=-50
+}
+
+var ypos=new Array()
+for (i=0;i<=message.length-1;i++) {
+	ypos[i]=-50
+}
+
+function handlerMM(e){
+	x = (document.layers) ? e.pageX : document.body.scrollLeft+event.clientX
+	y = (document.layers) ? e.pageY : document.body.scrollTop+event.clientY
+	flag=1
+}
+
+function makesnake() {
+	if (flag==1 && document.all) {
+    	for (i=message.length-1; i>=1; i--) {
+   			xpos[i]=xpos[i-1]+step
+			ypos[i]=ypos[i-1]
+    	}
+		xpos[0]=x+step
+		ypos[0]=y
+	
+		for (i=0; i<message.length-1; i++) {
+    		var thisspan = eval("span"+(i)+".style")
+    		thisspan.posLeft=xpos[i]
+			thisspan.posTop=ypos[i]
+    	}
+	}
+	
+	else if (flag==1 && document.layers) {
+    	for (i=message.length-1; i>=1; i--) {
+   			xpos[i]=xpos[i-1]+step
+			ypos[i]=ypos[i-1]
+    	}
+		xpos[0]=x+step
+		ypos[0]=y
+	
+		for (i=0; i<message.length-1; i++) {
+    		var thisspan = eval("document.span"+i)
+    		thisspan.left=xpos[i]
+			thisspan.top=ypos[i]
+    	}
+	}
+		var timer=setTimeout("makesnake()",30)
+}
+
+</script>
+
+<title>Next Full Moon Hash</title>
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<bgsound src="../bvd/mash.mid" loop="-1">
+
+<meta name="Microsoft Border" content="none">
+</head>
+
+<body onLoad="makesnake()" style="width:100%;overflow-x:hidden;overflow-y:scroll" bgcolor="#000000" text="#FFFFFF">
+<div align="center"><center>
+
+<table border="0" width="650" height="103">
+  <tr>
+    <td width="112" valign="middle" height="99" bgcolor="#FFFFFF" align="center"><p align="center">&nbsp;</p>
+    </td>
+    <td width="446" height="99" valign="middle" bgcolor="#000000"><p align="center"><font face="Arial Black" color="#FFFFFF" size="5">Details and Directions<br>
+      for the next<br>
+      Space Coast Full Moon Hash</font></td>
+    <td width="86" height="99" valign="top" bgcolor="#000000"><p valign="center" align="center">
+    &nbsp;</td>
+  </tr>
+</table>
+</center></div>
+
+<hr>
+<script>
+<!-- Beginning of JavaScript -
+
+for (i=0;i<=message.length-1;i++) {
+    document.write("<span id='span"+i+"' class='spanstyle'>")
+	document.write(message[i])
+    document.write("</span>")
+}
+
+if (document.layers){
+	document.captureEvents(Event.MOUSEMOVE);
+}
+document.onmousemove = handlerMM;
+
+// - End of JavaScript - -->
+</script>
+
+
+<div style="POSITION: relative" id="ygrp-mlmsg">
+	<div style="Z-INDEX: 1" id="ygrp-msg">
+		<div id="ygrp-text">
+			<div style="FONT-FAMILY: arial, helvetica, sans-serif; COLOR: #000000; FONT-SIZE: 10pt">
+				<div>
+					<span style="FONT-FAMILY: Georgia, helvetica, clean, sans-serif; FONT-SIZE: 15px" class="Apple-style-span">
+					<div class="msgarea entry-content">
+						WHAT: SC Full Moon H3 #69: Full Wolf Moon,&nbsp;</div>
+					<div class="msgarea entry-content">
+						<font color="#FFFFFF">Old Moon, Moon After Yule, Full 
+						Snow Moon,&nbsp;</div>
+					<div class="msgarea entry-content">
+						or the Pre-Pre</font><span style="font-family: Helvetica, Arial, 'Sans Serif'; font-size: 12px" class="Apple-style-span"><span style="font-family: Georgia, helvetica, clean, sans-serif; font-size: 15px" class="Apple-style-span"><font color="#FFFFFF">-Lube 
+						for&nbsp;<span id="lw_1264465314_0" class="yshortcuts">Jolly 
+						Roger</span>&nbsp;H3 Pirate&nbsp;</font></span></span></div>
+					<div class="msgarea entry-content">
+						<span style="font-family: Helvetica, Arial, 'Sans Serif'; font-size: 12px" class="Apple-style-span">
+						<span style="font-family: Georgia, helvetica, clean, sans-serif; font-size: 15px" class="Apple-style-span">
+						<font color="#FFFFFF">Invasion Hash Cruise</font></span></span></div>
+					<div class="msgarea entry-content">
+						<font color="#FFFFFF">&nbsp;<br>
+						WHEN:&nbsp;Friday<span id="lw_1264465314_1" class="yshortcuts">, 
+						January 29th 2010</span>&nbsp;&nbsp;&nbsp;</div>
+					<div class="msgarea entry-content">
+						<br>
+						MEET WHERE:&nbsp;On the beach just south of Cocoa&nbsp;</div>
+					<div class="msgarea entry-content">
+						Beach Pier, Just South of the&nbsp;Volley Ball Nuts. &nbsp;</div>
+					<div class="msgarea entry-content">
+						Here is an address you can google:</div>
+					<div class="msgarea entry-content">
+						<br>
+&nbsp;</div>
+					<div class="msgarea entry-content">
+						399 Pulsipher Avenue</div>
+					<div class="msgarea entry-content">
+						Cocoa Beach, FL 32931</div>
+					<div class="msgarea entry-content">
+						<br>
+&nbsp;</div>
+					<div class="msgarea entry-content">
+						Its just a smidge over a 1/2 mile walk from the&nbsp;</div>
+					<div class="msgarea entry-content">
+						hash hotel (Fawlty Towers) or from the recommended</div>
+					<div class="msgarea entry-content">
+						free parking...</div>
+					<div class="msgarea entry-content">
+						<br>
+&nbsp;</div>
+					<div class="msgarea
+ entry-content">
+						PARK WHERE: &nbsp;There is pay parking at the</div>
+					<div class="msgarea entry-content">
+						pier, $3 I think, and metered parking.</div>
+					<div class="msgarea entry-content">
+						But I would recommend parking near where&nbsp;</div>
+					<div class="msgarea entry-content">
+						the circle and on-after are gonna be...</div>
+					<div class="msgarea entry-content">
+						<br>
+&nbsp;</div>
+					<div class="msgarea entry-content">
+						At 150 E Columbia Lane, Cocoa Beach, FL 32931</div>
+					<div class="msgarea entry-content">
+						there is free parking for SandBar Customers, its</div>
+					<div class="msgarea entry-content">
+						directly across the street from SandBar</div>
+					<div class="msgarea entry-content">
+						<br>
+&nbsp;</div>
+					<div class="msgarea entry-content">
+						And across the street at 122 Dixie Lane, Cocoa</div>
+					<div class="msgarea entry-content">
+						Beach FL, 32931 There is a ton of Free Parking</div>
+					<div class="msgarea entry-content">
+						marked by large signs with red letters&nbsp;by Ron Jons</div>
+					<div class="msgarea entry-content">
+						<br>
+&nbsp;</div>
+					<div class="msgarea entry-content">
+						Both spots are about a 1/2 mile walk up</div>
+					<div class="msgarea entry-content">
+						Ocean beach Blvd or the Beach to the</div>
+					<div class="msgarea entry-content">
+						start. &nbsp;Circle, the On After, and the&nbsp;</div>
+					<div class="msgarea entry-content">
+						Hash Hotel are within &nbsp;about 300 feet</div>
+					<div class="msgarea entry-content">
+						of both spots.</div>
+					<div class="msgarea
+ entry-content">
+						<br>
+&nbsp;</div>
+					<div class="msgarea entry-content">
+						TIME: Meet up&nbsp;<span id="lw_1264465314_3" class="yshortcuts">6:00pm</span></div>
+					<div class="msgarea entry-content">
+						Circle up for chalk talk at&nbsp;6<span id="lw_1264465314_4" class="yshortcuts">:15pm 
+						then Hare Away</span></div>
+					<div class="msgarea entry-content">
+						Hounds away&nbsp;6<span id="lw_1264465314_5" class="yshortcuts">:30pm</span>&nbsp;</div>
+					<div class="msgarea entry-content">
+						<br>
+&nbsp;</div>
+					<div class="msgarea entry-content">
+						HARE: Kotex Cutter (I need help, anyone have a cooler I 
+						can borrow</div>
+					<div class="msgarea entry-content">
+						to transport beverages from start, to beer stop, to 
+						circle?)</div>
+					<div class="msgarea entry-content">
+						<br>
+&nbsp;</div>
+					<div class="msgarea entry-content">
+						WEAR: HaSHIT, or if your still pissed about Carnival's 
+						knee jerk</div>
+					<div class="msgarea entry-content">
+						reaction and looking for another opportunity to wear</div>
+					<div class="msgarea entry-content">
+						dirty pirate clothing, then by all means bring it 
+						on-arrrrrr.</div>
+					<div class="msgarea entry-content">
+						If your married and live together try not to wear 
+						matching</div>
+					<div class="msgarea entry-content">
+						hash attire, I know its tough to resist the urge to 
+						match ;-p</div>
+					<div class="msgarea entry-content">
+						<br>
+						THEME:&nbsp;Full Wolf Moon or&nbsp;Pre-Pirate Invasion of Cocoa 
+						Beach</div>
+					<div class="msgarea entry-content">
+						<br>
+&nbsp;</div>
+					<div class="msgarea
+ entry-content">
+						BRING: FREE, $0, no pieces of eight, B.Y.O.B., virgins, 
+						torches, vessels,</div>
+					<div class="msgarea
+ entry-content">
+						virgins, barley pops, a good attitude, bad jokes, 
+						libation of your choice,</div>
+					<div class="msgarea
+ entry-content">
+						virgins, torches.</div>
+					<div class="msgarea entry-content">
+						<br>
+&nbsp;</div>
+					<div class="msgarea entry-content">
+						<span class="Apple-style-span">OTHER INFO : This will be 
+						a partially pre-set, mostly dead hare</span></div>
+					<div class="msgarea entry-content">
+						<span class="Apple-style-span">Trail, easy 3-4 mile 
+						trail, mostly streets, 1 beer&nbsp;</span></div>
+					<div class="msgarea entry-content">
+						<span class="Apple-style-span">stop with snacks. &nbsp;There 
+						is a 7-11 near the recommended parking/</span></div>
+					<div class="msgarea entry-content">
+						<span class="Apple-style-span">circle, so if your 
+						running low on beverages you can get more</span></div>
+					<div class="msgarea entry-content">
+						<span class="Apple-style-span">easily. &nbsp;Trail is A2B as 
+						mention earlier in where</span></div>
+					<div class="msgarea entry-content">
+						<span class="Apple-style-span">to meet and where to 
+						park. &nbsp;The circle will be very close to</span></div>
+					<div class="msgarea entry-content">
+						<span class="Apple-style-span">the on-after... &nbsp;&nbsp;</span></div>
+					<div class="msgarea entry-content">
+						<span class="Apple-style-span"><br>
+&nbsp;</span></div>
+					<div class="msgarea entry-content">
+						<span class="Apple-style-span">ON-AFTER: Near the 
+						recommended parking and Hash Hotel at</span></div>
+					<div class="msgarea entry-content">
+						<span class="Apple-style-span">Sandbar Sports Grill, 
+						starting around 8:30pmish&nbsp;I've secured a 10% discount</span></div>
+					<div class="msgarea entry-content">
+						<span class="Apple-style-span">On everything for all 
+						hashers, working on drink&nbsp;Specials. &nbsp;</span></div>
+					<div class="msgarea entry-content">
+						Special on friday is 1 lb. of crab legs for $9.99 and 
+						they have live music.</div>
+					<div class="msgarea entry-content">
+						<span class="Apple-style-span"><br>
+&nbsp;</span></div>
+					<div class="msgarea entry-content">
+						<span class="Apple-style-span">4301 Ocean Beach Blvd</span></div>
+					<div class="msgarea entry-content">
+						<span class="Apple-style-span">
+						<span id="lw_1264465314_7" class="yshortcuts">Cocoa 
+						Beach</span>, Fl 32931 &nbsp;</span></div>
+					<div class="msgarea entry-content">
+						<br>
+&nbsp;</div>
+					<div class="msgarea entry-content">
+						DE-ERECTIONS: from 95 take exit #201 for 520.</div>
+					<div class="msgarea entry-content">
+						Head east to the beach. Fawlty Towers is on your</div>
+					<div class="msgarea entry-content">
+						Right as soon as you cross over A1A/N. Atlantic</div>
+					<div class="msgarea entry-content">
+						Ave. &nbsp;, keep going 1 more block and sandbar is</div>
+					<div class="msgarea entry-content">
+						On your left on the beach side of Ocean Beach</div>
+					<div class="msgarea entry-content">
+						Blvd.&nbsp;&nbsp;&nbsp;&nbsp;</div>
+					<div class="msgarea entry-content">
+						<br>
+&nbsp;</div>
+					<div class="msgarea entry-content">
+						Any Questions, Call/sxt/e-nail me 631.365.0554 reed_scot 
+						( at ) yahoo ( dot ) com</div>
+					<div>
+						<br>
+&nbsp;</font></div>
+					</span></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<hr>
+
+</body>
+</html>

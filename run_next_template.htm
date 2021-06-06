@@ -1,0 +1,179 @@
+<html xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+<style>
+.spanstyle {
+	position:absolute;
+	visibility:visible;
+	top:-50px;
+	font-size:10pt;
+	font-family:Verdana;
+      font-weight:bold;
+	color:white;
+}
+div.Section1
+	{page:Section1;}
+.tdstyle1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	background-color: #BB7324;
+	line-height: 13px;
+}
+.med{font-size:medium;font-weight:normal;padding:0;margin:0}#res{padding-right:1em}ol li{list-style:none}.g{margin:1em 0}li.g{font-size:small;font-family:arial,sans-serif}.s{max-width:42em}body.hmmessage
+{
+font-size: 10pt;
+font-family:Verdana
+}
+.style2 {
+	font-family: "Times New Roman";
+}
+.style8 {
+	font-size: small;
+}
+.geo{display:none;}
+.subgray {
+	font-size: 1em;
+	font-weight: bold;
+	color: #666666;
+	letter-spacing: .1em;
+}
+.style9 {
+	text-align: center;
+}
+.style10 {
+	font-family: Arial, sans-serif;
+}
+</style>
+<script>
+
+/*
+Cursor Trailor Text- By Peter Gehrig (http://www.24fun.ch/)
+Permission given to Dynamicdrive.com to feature script in it's archive.
+For full source code, installation instructions, and 1000's more DHTML scripts,
+visit http://dynamicdrive.com
+*/
+
+var x,y
+var step=20
+var flag=0
+
+// Your snappy message. Important: the space at the end of the sentence!!!
+var message="Hi Ho, Hi Ho, A Running We Will Go... "
+message=message.split("")
+
+var xpos=new Array()
+for (i=0;i<=message.length-1;i++) {
+	xpos[i]=-50
+}
+
+var ypos=new Array()
+for (i=0;i<=message.length-1;i++) {
+	ypos[i]=-50
+}
+
+function handlerMM(e){
+	x = (document.layers) ? e.pageX : document.body.scrollLeft+event.clientX
+	y = (document.layers) ? e.pageY : document.body.scrollTop+event.clientY
+	flag=1
+}
+
+function makesnake() {
+	if (flag==1 && document.all) {
+    	for (i=message.length-1; i>=1; i--) {
+   			xpos[i]=xpos[i-1]+step
+			ypos[i]=ypos[i-1]
+    	}
+		xpos[0]=x+step
+		ypos[0]=y
+	
+		for (i=0; i<message.length-1; i++) {
+    		var thisspan = eval("span"+(i)+".style")
+    		thisspan.posLeft=xpos[i]
+			thisspan.posTop=ypos[i]
+    	}
+	}
+	
+	else if (flag==1 && document.layers) {
+    	for (i=message.length-1; i>=1; i--) {
+   			xpos[i]=xpos[i-1]+step
+			ypos[i]=ypos[i-1]
+    	}
+		xpos[0]=x+step
+		ypos[0]=y
+	
+		for (i=0; i<message.length-1; i++) {
+    		var thisspan = eval("document.span"+i)
+    		thisspan.left=xpos[i]
+			thisspan.top=ypos[i]
+    	}
+	}
+		var timer=setTimeout("makesnake()",30)
+}
+
+</script>
+
+<title>Next Run</title>
+<meta name="GENERATOR" content="Microsoft FrontPage 12.0">
+
+<meta name="Microsoft Border" content="none">
+</head>
+
+<body background="images/ononfoot.gif" bgproperties="fixed" text="#000000" link="#000000" vlink="#000000" alink="#000000">
+<b>
+<body background="images/ononfoot.gif" bgproperties="fixed" text="#000000" link="#000000" vlink="#000000" alink="#000000">
+<p align="center"><font face="Arial Black" size="5">Information and Directions
+to the next Hash<br>
+</font>
+<p class="MsoNormal">
+<span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:black">WHAT:&nbsp; 
+H3SC Hash #3</span><span class="style10">20</span></p>
+<p class="MsoNormal">
+<span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:black">WHEN:&nbsp; 
+Wednesday, June 13th, 2012<br>
+<br>
+WHERE<strong>:&nbsp; </strong></span><span class="style10"><strong>Centre 1 
+Building, 490 Centre Lake Circle, Palm Bay</strong></span></p>
+<p class="style10"><strong>TIME: Start meeting at 6:00.&nbsp; Hare away by 6:30 
+at latest</strong></p>
+<p class="MsoNormal">
+<span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:black">HARE(S):&nbsp;Hairy 
+Cheezeballz<br>
+<br>
+THEME:<strong> </strong>You have the right to remain silent.<br>
+<br>
+WEAR:&nbsp;At least a Hash shirt if you're named.<o:p></o:p></span></p>
+<p class="MsoNormal">
+<span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:black">BRING:&nbsp; 
+$5.00 Hash cash, torch, virgins, bug juice, virgins, shag bag, drinking vessel, 
+whistle, and of course, virgins</span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+color:black">.</span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:black"><br>
+<br>
+ON-AFTER<strong>: </strong> </span>
+<span style="color:black" class="style10"><span style="mso-spacerun:yes">
+<strong>&nbsp;</strong></span></span><span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:black">Long Doggers</span></p>
+<p class="style9">
+<span style="font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;color:black">D'Rections<o:p></o:p></span></p>
+<div class="style9">
+	<p class="MsoNormal">Centre Lake is on the southwest corner of I95 and Palm 
+	Bay Road.&nbsp; Go&nbsp; west on Palm Bay Rd. after I95. Or get of I95 and 
+	go west on Palm Bay Rd.&nbsp; The first traffic light on Palm Bay Rd after 
+	the I95 turn left onto Culver.&nbsp; Once on Culver take the first left onto 
+	Centre Lake and then the next left into the parking lot.&nbsp; Start parking 
+	behind building.</p>
+</div>
+<p align="center"> 
+&nbsp;<span class="style2"><span class="style8"><a href="index.htm"><img border="0" src="images/onback.gif" width="64" height="30"></a> </span></span>
+</p>
+
+</b>
+
+</body>
+</html>
